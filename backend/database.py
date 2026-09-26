@@ -49,6 +49,7 @@ def connect():
         raise RuntimeError("The NeuroGuard server database password has not been configured.")
 
     config = dict(CONFIG)
+    config["use_pure"] = True
     config["ssl_verify_cert"] = True
     config["ssl_verify_identity"] = True
     config["ssl_ca"] = "/etc/ssl/certs/ca-certificates.crt"
