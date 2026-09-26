@@ -47,7 +47,13 @@ def _mysql():
 def connect():
     if not CONFIG.get("password"):
         raise RuntimeError("The NeuroGuard server database password has not been configured.")
-    return _mysql().connect(**CONFIG, connection_timeout=8)
+
+    config = dict(CONFIG)
+    config["ssl_verify_cert"] = True
+    config["ssl_verify_identity"] = True
+    config["ssl_ca"] = "/etc/ssl/certs/ca-certificates.crt"
+
+    return _mysql().connect(**config, connection_timeout=8)
 
 
 def init_database():
