@@ -10,7 +10,7 @@ from backend.database import init_database, save_prediction, fetch_history
 
 st.set_page_config(page_title="NeuroGuard", page_icon="🧠", layout="wide", initial_sidebar_state="expanded")
 ROOT = Path(__file__).parent
-BRAIN = ROOT / "assets" / "neuroguard_brain_hero.png"
+BRAIN = ROOT /"neuroguard_brain_hero.png"
 AMBIENT = ROOT / "assets" / "neuroguard_ambient.wav"
 
 # Same visual direction as the original NeuroGuard interface: light futuristic, not Apple-style.
