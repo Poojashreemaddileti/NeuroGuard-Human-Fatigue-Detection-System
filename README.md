@@ -1,4 +1,4 @@
-# NeuroGuard — Deployable Human Fatigue Detection
+# NeuroGuard — Human Fatigue Detection
 
 This is the deployable version of the original NeuroGuard interface. The existing visual design and workflow are preserved; the backend architecture has been adjusted so database credentials are administrator/server configuration, never end-user settings.
 
