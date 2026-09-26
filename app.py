@@ -8,7 +8,7 @@ from backend.eeg_processor import load_eeg_file, extract_band_features
 from backend.model import FatigueModel
 from backend.database import init_database, save_prediction, fetch_history
 
-st.set_page_config(page_title="NeuroGuard", page_icon="🧠", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="NeuroGuard Human Fatigue Detection System", page_icon="🧠", layout="wide", initial_sidebar_state="expanded")
 ROOT = Path(__file__).parent
 BRAIN = ROOT /"neuroguard_brain_hero.png"
 AMBIENT = ROOT / "assets" / "neuroguard_ambient.wav"
